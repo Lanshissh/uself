@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>HOME PAGE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/plugins.css" />
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css" />
+        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body data-spy="scroll" data-target=".navbar-collapse">
+        <div class='preloader'><div class='loaded'>&nbsp;</div></div>
+        <div class="culmn">
+            <header id="main_menu" class="header navbar-fixed-top">            
+                <div class="main_menu_bg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="nave_menu">
+                                <nav class="navbar navbar-default">
+                                    <div class="container-fluid">
+                                        <div class="navbar-header">
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                                <span class="sr-only">Toggle navigation</span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                            </button>
+                                            <a class="navbar-brand" href="#home">
+                                                <img src="assets/images/logo.png"/>
+                                            </a>
+                                        </div>
+                                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                            <ul class="nav navbar-nav navbar-right">
+                                                <li><a href="#home">Home</a></li>
+                                                <li><a href="#about">About us</a></li>
+                                                <li><a href="#contact">Contact us</a></li>
+                                                <li><a href="#eku">Eku balu</a></li>
+                                                <li>
+                                                <a href="#"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fa fa-search"></i>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <form class="navbar-form" role="search">
+                                                            <div class="form-group">
+                                                                <input type="text" class="form-control" placeholder="Search">
+                                                            </div>
+                                                        </form>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>	
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="home" class="home">
+            <div class="overlay all_overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 ">
+                            <div class="main_home_slider text-center">
+                                <div class="single_home_slider">
+                                    <div class="main_home wow fadeInUp" data-wow-duration="700ms">
+                                        <h4>LOREM LOREM LOREM</h4>
+                                        <h1>LOREM IPSUM</h1>
+                                        <div class="whiteseparator"></div>
+                                        <div class="home_btn">
+                                            <a href="" class="btn btn-primary">LOREM IPSUM</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="single_home_slider">
+                                    <div class="main_home wow fadeInUp" data-wow-duration="700ms">
+                                        <h4>LOREM LOREM LOREM</h4>
+                                        <h1>LOREM IPSUM</h1>
+                                        <div class="whiteseparator"></div>
+                                        <div class="home_btn">
+                                            <a href="" class="btn btn-primary">LOREM IPSUM</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="single_home_slider">
+                                    <div class="main_home wow fadeInUp" data-wow-duration="700ms">
+                                        <h4>LOREM LOREM LOREM</h4>
+                                        <h1>LOREM IPSUM</h1>
+                                        <div class="whiteseparator"></div>
+                                        <div class="home_btn">
+                                            <a href="" class="btn btn-primary">LOREM IPSUM</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section id="about" class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="main_about_area sections text-center">
+                        <div class="col-sm-10 col-sm-offset-1">
+                            <div class="head_title text-center">
+                                <h4 class="subtitle">LOREM IPSUM LOREM</h4>
+                                <h2>LOREM LOREM LOREM</h2>
+                                <div class="separator"></div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.mixitup.min.js"></script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+    <script src="assets/js/jquery.masonry.min.js"></script>
+    <script src="assets/js/jquery.fancybox.pack.js"></script>
+    <script>
+        function showmap() {
+            var mapOptions = {
+                zoom: 8,
+                scrollwheel: false,
+                center: new google.maps.LatLng(-34.397, 150.644),
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+        }
+    </script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
