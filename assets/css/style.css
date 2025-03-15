@@ -274,8 +274,8 @@ ul{
     margin: auto;
 }
 .all_overlay{
-    background: rgba(219, 116, 117, 0.75);
-    background: -moz-linear-gradient(top, rgba(219, 116, 117, 0.6) 0%,
+    background: rgba(220, 132, 118, 0.75);
+    background: -moz-linear-gradient(top, rgba(220, 132, 118, 0.75) 0%,
         rgba(220, 132, 118, 0.75) 24%,
         rgba(224, 150, 121, 0.75) 42%,
         rgba(222, 151, 119, 0.75) 42%,
@@ -290,7 +290,7 @@ ul{
         rgba(227, 189, 124, 0.75) 79%,
         rgba(225, 195, 123, 0.75) 84%,
         rgba(228, 205, 125, 0.75) 100%);
-    background: -webkit-linear-gradient(top, rgba(219, 116, 117, 0.6) 0%,
+    background: -webkit-linear-gradient(top, rgba(220, 132, 118, 0.75) 0%,
         rgba(220, 132, 118, 0.75) 24%,
         rgba(224, 150, 121, 0.75) 42%,
         rgba(222, 151, 119, 0.75) 42%,
@@ -305,7 +305,7 @@ ul{
         rgba(227, 189, 124, 0.75) 79%,
         rgba(225, 195, 123, 0.75) 84%,
         rgba(228, 205, 125, 0.75) 100%);
-    background: linear-gradient(to bottom, rgba(219, 116, 117, 0.6) 0%,
+    background: linear-gradient(to bottom, rgba(220, 132, 118, 0.75) 0%,
         rgba(220, 132, 118, 0.75) 24%,
         rgba(224, 150, 121, 0.75) 42%,
         rgba(222, 151, 119, 0.75) 42%,
@@ -338,7 +338,7 @@ ul{
     height: 3px;
     width: 127px;
     margin: 25px auto;
-    background: #f38181;
+    background: #c91414;
 }
 .whiseparator {
     height: 10px;
@@ -666,7 +666,7 @@ h1 span {
 }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-    background: #f5c239;
+    background: #e02e2e;
 }
 .owl-theme .owl-dots .owl-dot span {
     -webkit-border-radius: 0px;
