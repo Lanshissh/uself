@@ -1,0 +1,92 @@
+.current-progress {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.progress-header {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.progress-stats, .progress-status {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.progress-item, .status-item {
+    flex: 1 1 200px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.progress-item h3, .status-item h4 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.progress-item p, .status-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Animation for progress items */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.progress-item, .status-item {
+    opacity: 0; /* Start invisible */
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Delay animations for each item */
+.progress-item:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.progress-item:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.progress-item:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.progress-item:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.progress-item:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.status-item:nth-child(1) {
+    animation-delay: 1.2s;
+}
+
+.status-item:nth-child(2) {
+    animation-delay: 1.4s;
+}
+
+.status-item:nth-child(3) {
+    animation-delay: 1.6s;
+}
+
+.status-item:nth-child(4) {
+    animation-delay: 1.8s;
+}
