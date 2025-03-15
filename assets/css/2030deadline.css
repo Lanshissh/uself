@@ -1,0 +1,144 @@
+/* PANG 2030 DEADLINE YAMU INI */
+/* Countdown Container */
+.countdown-container {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    color: black;
+}
+
+/* Title */
+.countdown-title {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Countdown Timer */
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 900px; /* Wider Container */
+    margin: auto;
+    padding: 20px;
+}
+
+/* Flipdown Timer */
+.countdown .flipdown {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .countdown-title {
+        font-size: 1.8rem;
+    }
+    .countdown .flipdown {
+        max-width: 100%;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.column {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px 100px;
+    color: white;
+}
+
+.left {
+    background-color: #A1B57D; /* palit color */
+}
+
+.right {
+    background-color: #d62828; /* palit color */
+}
+
+.dl-hdr {
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+}
+
+.dl-prgph {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.stats-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f4; 
+}
+
+.stats-header {
+    font-size: 3.5rem;
+    margin: 40px 0px;
+    font-weight: bold;
+    color: #333;
+}
+
+.stats-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    max-width: 80%;
+    margin: auto;
+}
+
+.stats-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.stats-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.stats-text {
+    flex: 1;
+    text-align: left;
+    color: #222;
+    max-width: 50%;
+}
+
+.stats-text p {
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+     .stats-row {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .stats-row:nth-of-type(2) {
+        flex-direction: column-reverse; 
+    }
+
+    .stats-image {
+        max-width: 100%;
+    }
+
+    .stats-text {
+        text-align: center;
+        max-width: 100%;
+    }
+}
+
