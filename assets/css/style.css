@@ -169,7 +169,8 @@ h4 {
     font-size: 1.5rem;
     line-height: 2.2rem;
     margin-bottom: 0.575rem;
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Kaushan Script', cursive; */
 }
 h5 {
     font-size: 1.125rem;

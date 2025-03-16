@@ -3,8 +3,8 @@
 .countdown-container {
     text-align: center;
     padding: 20px;
-    background-color: white;
-    color: black;
+    color: white;
+    background-color: black;
 }
 
 .countdown-title {
@@ -20,9 +20,11 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 900px; 
-    margin: auto;
+    max-width: 90%; 
+    margin: 30px auto;
     padding: 20px;
+    background-color: gray;
+    border-radius: 10px;
 }
 
 .countdown .flipdown {
@@ -30,8 +32,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
+
+.flipdown {
+    transform: scale(1.5);
+    margin: 30px 0px 50px 0px;
+}
+
+.flipdown .rotor-group {
+    font-size: 2rem;
+}
+
+.flipdown.flipdown__theme-dark .rotor-group-heading:before {
+    color: white !important;
+    font-size: 1.1rem;
+}
+
+.flipdown.flipdown__theme-dark .rotor-group:nth-child(n+2):nth-child(-n+3):before,
+.flipdown.flipdown__theme-dark .rotor-group:nth-child(n+2):nth-child(-n+3):after {
+  background-color: white !important;
+}
+
+
 
 @media (max-width: 768px) {
     .countdown-title {
@@ -50,45 +72,54 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .column {
     flex: 1;
     min-width: 300px;
-    padding: 20px 100px;
+    padding: 50px 100px;
     color: white;
 }
 
 .left {
-    background-color: #A1B57D; /* palit color */
+    background-color: #7F2A3C; /* palit color */
 }
 
 .right {
-    background-color: #d62828; /* palit color */
+    background-color: #B43F3F; /* palit color */
 }
 
-.dl-hdr {
+.left .dl-hdr {
     font-weight: bold;
-    color: black;
+    color: #A1B57D;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
+}
+
+.right .dl-hdr {
+    font-weight: bold;
+    color: #DA9E4B;
+    text-align: center;
+    font-size: 40px;
 }
 
 .dl-prgph {
-    font-size: 20px;
+    font-size: 22px;
     text-align: justify;
+    margin: 30px auto;
 }
 
 .stats-section {
     text-align: center;
-    padding: 40px 20px;
-    background-color: #f4f4f4; 
+    padding: 20px 20px 60px 20px;
+    background-color: #DA9E4B; 
 }
 
 .stats-header {
     font-size: 5rem;
-    margin: 40px 0px;
+    margin: 40px 0px 40px 60px;
     font-weight: bold;
-    color: black;
-    text-align: center;
+    color: #7F2A3C;
+    text-align: left;
     /* padding-left: 120px; */
 }
 
@@ -99,6 +130,10 @@
     gap: 60px;
     max-width: 80%;
     margin: auto;
+}
+
+.row2 {
+    margin-top: 100px;
 }
 
 .stats-image {
@@ -119,8 +154,14 @@
     max-width: 50%;
 }
 
+.row2 .stats-text p {
+    background-color: #A1B57D;
+    padding: 30px;
+    color: white;
+}
+
 .stats-text p {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 @media (max-width: 768px) {
@@ -149,3 +190,23 @@
     }
 }
 
+@media (max-width: 768px) {
+    .flipdown {
+        width: 100%;
+        height: auto;
+    }
+
+    .flipdown .rotor {
+        font-size: 1.8rem; /* Reduce font size */
+        margin-right: 2px; /* Reduce margin */
+    }
+
+    .flipdown .rotor-group {
+        padding-right: 10px; /* Reduce padding between groups */
+    }
+
+    .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3):before,
+    .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3):after {
+        left: auto; /* Adjust or remove fixed positioning */
+    }
+}

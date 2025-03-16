@@ -1,20 +1,21 @@
 .fail-deadline {
     padding: 40px 20px;
-    background-color: #f9f9f9;
+    background-color: #7F2A3C;
     text-align: center;
 }
 
 .fail-header {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #333;
+    text-align: right;
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding: 0px 50px 50px 50px;
+    color: white;
 }
 
 .flip-card-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 15px;
 }
 
 /* Flip Card Styles */
