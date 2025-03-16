@@ -1,0 +1,57 @@
+.importance-section {
+    background-color: #A1B57D;
+    padding: 50px 10%;
+}
+
+.importance-header {
+    color: #7F2A3C;
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.importance-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.importance-image,
+.importance-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.importance-image {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.importance-image img {
+    width: 80%; 
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.importance-text p {
+    font-size: 1.4rem;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .importance-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .importance-header {
+        text-align: center;
+    }
+
+    .importance-image,
+    .importance-text {
+        max-width: 100%;
+    }
+}
