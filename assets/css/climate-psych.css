@@ -1,19 +1,61 @@
 .climate-psychology {
     background-color: #D87946;
     color: white;
-    text-align: center;
     padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cp-header {
     font-size: 4rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: #7F2A3C;
+    text-align: center;
 }
 
-.content {
+/* 50/50 Layout: Text on Left, Image on Right */
+.cp-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Text on the left */
+.cp-text {
+    width: 50%;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.cp-text p {
     font-size: 1.2rem;
-    max-width: 800px;
-    margin: 0 auto;
+}
+
+/* Image on the right */
+.cp-image {
+    width: 50%;
+    text-align: center;
+}
+
+.cp-image img {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cp-row {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .cp-text, .cp-image {
+        width: 100%;
+    }
 }
