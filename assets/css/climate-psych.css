@@ -15,7 +15,6 @@
     text-align: center;
 }
 
-/* 50/50 Layout: Text on Left, Image on Right */
 .cp-row {
     display: flex;
     justify-content: space-between;
@@ -24,7 +23,6 @@
     width: 100%;
 }
 
-/* Text on the left */
 .cp-text {
     width: 50%;
     text-align: left;
@@ -35,7 +33,6 @@
     font-size: 1.2rem;
 }
 
-/* Image on the right */
 .cp-image {
     width: 50%;
     text-align: center;
@@ -48,7 +45,6 @@
     border-radius: 10px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .cp-row {
         flex-direction: column;

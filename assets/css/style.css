@@ -43,7 +43,7 @@ img {
     -ms-user-select: none;
     user-select: none;
     -webkit-user-drag: none;
-    user-drag: none;
+    /* user-drag: none; */
 }
 a,
 a:hover,
@@ -525,7 +525,7 @@ h1 span {
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
     color:#f6c23a;
 }
-.main_menu_bg .navbar {}
+/* .main_menu_bg .navbar {} */
 
 .main_menu_bg .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
     color: #f6c23a;
