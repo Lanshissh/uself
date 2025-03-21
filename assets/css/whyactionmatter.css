@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 .actions-section {
     background-color: white;
     padding: 50px 10%;
@@ -6,9 +8,10 @@
 
 .actions-header {
     color: #B43F3F;
-    font-size: 3.5rem;
+    font-size: 5rem;
     margin-bottom: 20px;
     font-weight: bold;
+    font-family: 'Oswald', sans-serif;
 }
 
 .actions-text {
@@ -30,10 +33,11 @@
 }
 
 .actions-list h3 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     color: black;
     margin-bottom: 15px;
     font-weight: bold;
+    font-family: 'Oswald', sans-serif;
 }
 
 .actions-list ul {

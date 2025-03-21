@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 html,
 body {
     background-color: #fff;
@@ -7,7 +9,7 @@ body {
     padding: 0;
     margin-left: 0;
     margin-right: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     width:100%;
 }
@@ -124,7 +126,7 @@ p {
     z-index: 300;
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-    background-color:rgba(34, 61, 97, 0.64);
+    background-color:rgba(34, 61, 97, 0.7);
     -webkit-transition:all .3s;
     -moz-transition:all .3s;
     transition:all .3s;
@@ -152,7 +154,7 @@ p {
     padding-bottom: 20px;
     border-bottom: 2px solid #FDE48A;
     background: transparent;
-
+    font-weight: bold;
 }
 
 .main_menu_bg .navbar-nav>li>a {
@@ -374,3 +376,4 @@ h1.carousel-title {
     z-index: 2;
     color: white; 
 }
+

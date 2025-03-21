@@ -1,4 +1,5 @@
 /* PANG 2030 DEADLINE YAMU INI */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 .countdown-container {
     text-align: center;
@@ -8,11 +9,12 @@
 }
 
 .countdown-title {
-    font-size: 5rem;
+    font-size: 6rem;
     margin-bottom: 20px;
     margin-top: 30px;
     text-transform: uppercase;
     font-weight: bold;
+    font-family: 'Oswald', sans-serif;
 }
 
 .countdown {
@@ -88,6 +90,10 @@
     background-color: #B43F3F; /* palit color */
 }
 
+.dl-hdr {
+    font-family: 'Oswald', sans-serif;
+}
+
 .left .dl-hdr {
     font-weight: bold;
     color: #A1B57D;
@@ -115,11 +121,12 @@
 }
 
 .stats-header {
-    font-size: 5rem;
+    font-size: 8rem;
     margin: 40px 0px 40px 60px;
     font-weight: bold;
     color: #7F2A3C;
     text-align: left;
+    font-family: 'Oswald', sans-serif;
     /* padding-left: 120px; */
 }
 
@@ -132,8 +139,13 @@
     margin: auto;
 }
 
+.row1 {
+    margin-top: 100px;
+}
+
 .row2 {
     margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 .stats-image {
@@ -143,8 +155,72 @@
 
 .stats-image img {
     width: 100%;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.img-1 {
+    position: relative;
+    display: inline-block;
+    transform: rotate(5deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-1 img {
+    display: block;
+    width: 100%; 
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.img-1:hover {
+    transform: rotate(0deg); 
+}
+
+.img-1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #FFF5F5; 
+    right: -20px; 
+    bottom: -20px; 
+    z-index: 1;
+    /* border-radius: 5px;  */
+    transition: transform 0.3s ease-in-out; 
+}
+
+.img-2 {
+    position: relative;
+    display: inline-block;
+}
+
+.img-2 img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    transform: rotate(-10deg); 
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-2:hover img {
+    transform: rotate(0deg);
+}
+
+.img-2::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #FFF9F9; 
+    right: -15px; 
+    bottom: -15px; 
+    z-index: 1;
+    /* border-radius: 5px;  */
+    transition: transform 0.3s ease-in-out; 
 }
 
 .stats-text {
@@ -152,6 +228,10 @@
     text-align: left;
     color: #222;
     max-width: 50%;
+}
+
+.row1 .stats-text p {
+    margin-bottom: 30px;
 }
 
 .row2 .stats-text p {

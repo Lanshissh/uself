@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 .support-section {
     background-color: #B43F3F;
     padding: 50px 0px 60px 0px;
@@ -5,10 +7,11 @@
 
 .sup-header {
     text-align: right;
-    font-size: 4.2rem;
+    font-size: 6rem;
     font-weight: bold;
     padding: 0px 50px 50px 50px;
     color: #DA9E4B;
+    font-family: 'Oswald', sans-serif;
 }
 
 .banner {
@@ -25,6 +28,7 @@
 .banner.sup-left {
     margin-right: auto; 
     background-color: #C7DB9C;
+    padding: 30px;
 }
 
 .banner.sup-right {
@@ -32,16 +36,19 @@
     flex-direction: row-reverse; 
     text-align: right;
     background-color: #D87946;
+    padding: 30px;
 }
 
 .banner.sup-right h4, .banner.sup-left h4 {
-    font-size: 28px;
+    font-size: 2rem;
     color: black;
     font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 14px;
 }
 
 .banner.sup-right p, .banner.sup-left p {
-    font-size: 22px;
+    font-size: 20px;
     color: black;
 }
 
