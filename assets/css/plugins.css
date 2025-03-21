@@ -243,7 +243,7 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
  * 	Default theme - Owl Carousel CSS File
  */
 .owl-theme .owl-nav {
-  margin-top: 10px;
+  /* margin-top: 10px; */
   text-align: center;
   -webkit-tap-highlight-color: transparent;
 }
@@ -272,6 +272,11 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
   margin-top: 10px;
 }
 .owl-theme .owl-dots {
+  position: absolute;
+  bottom: 50px;  /* Adjust this value if needed */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
   text-align: center;
   -webkit-tap-highlight-color: transparent;
 }
@@ -281,8 +286,8 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
   *display: inline;
 }
 .owl-theme .owl-dots .owl-dot span {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   margin: 5px 7px;
   background: #d6d6d6;
   display: block;
@@ -299,6 +304,8 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: #869791;
 }
+
+
 
 
 
