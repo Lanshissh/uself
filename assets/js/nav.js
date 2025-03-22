@@ -15,7 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Mobile Menu Toggle
     menuToggle.addEventListener("click", function () {
+        console.log("Hamburger menu clicked!"); // Debugging
         navMenu.classList.toggle("active");
+        console.log("Active class added:", navMenu.classList.contains("active")); // Debugging
     });
 
     // Add "active" class to clicked link and remove from others

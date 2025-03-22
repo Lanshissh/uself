@@ -2,7 +2,6 @@
 
 .climate-psychology {
     background-color: #D87946;
-    color: white;
     padding: 50px 20px 80px 20px;
     display: flex;
     flex-direction: column;
@@ -36,6 +35,7 @@
     font-size: 20px;
     margin-bottom: 20px;
     text-align: justify;
+    color: black;
 }
 
 .cp-image {
@@ -65,7 +65,7 @@
     }
 
     .cp-image {
-        order: -1; /* Pushes the image to the top */
+        order: -1;
         margin-bottom: 40px;
     }
 
