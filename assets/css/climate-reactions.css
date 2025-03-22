@@ -62,13 +62,27 @@
 .box4 { background-color: #7F2A3C; flex: 2.7; }
 
 @media (max-width: 768px) {
+    .climate-reactions {
+        padding: 50px 20px;
+    }
+
+    .cr-header {
+        font-size: 3.8rem;
+        margin-bottom: 30px;
+        padding: 0px 30px;
+    }
+
     .bento-container {
         flex-direction: column;
-        gap: 15px;
+        gap: 24px;
     }
 
     .bento-box {
         flex: none;
         width: 100%;
+    }
+
+    .bento-box p {
+        font-size: 1.3rem;
     }
 }

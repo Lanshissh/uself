@@ -51,6 +51,10 @@
 }
 
 @media (max-width: 768px) {
+    .climate-psychology {
+        padding: 50px 20px 30px 20px;
+    }
+
     .cp-row {
         flex-direction: column;
         text-align: center;
@@ -59,4 +63,20 @@
     .cp-text, .cp-image {
         width: 100%;
     }
+
+    .cp-image {
+        order: -1; /* Pushes the image to the top */
+        margin-bottom: 40px;
+    }
+
+    .cp-header {
+        font-size: 4rem;
+        margin-bottom: 40px;
+    }
+
+    .cp-text p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    
 }

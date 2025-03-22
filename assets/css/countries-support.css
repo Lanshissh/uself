@@ -52,10 +52,25 @@
     color: black;
 }
 
-.icon i {
+.banner.sup-left .icon i {
     font-size: 40px;
     color: black;
-    background-color: #FFF5F5;
+    background-color: #8BB174;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 0 15px;
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center;
+    width: 80px;  
+    height: 80px; 
+    flex-shrink: 0;
+}
+
+.banner.sup-right .icon i {
+    font-size: 40px;
+    color: black;
+    background-color: #fbc080;
     border-radius: 50%;
     padding: 15px;
     margin: 0 15px;
@@ -70,9 +85,10 @@
 @media (max-width: 768px) {
     .sup-header {
         text-align: center;
-        font-size: 3.6rem;
+        font-size: 3rem;
         font-weight: bold;
-        margin: 20px 10px;
+        margin: 0px 10px;
+        padding: 0px 0px 20px 0px;
     }
 
     .banner {
@@ -98,7 +114,7 @@
     }
 
     .banner.sup-right p, .banner.sup-left p {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .icon {

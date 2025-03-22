@@ -117,3 +117,20 @@
         max-width: 90%;
     }
 }
+
+@media (max-width: 768px) {
+    .progress-header {
+        font-size: 4rem;
+        margin-bottom: 40px;
+        color: #7F2A3C;
+        font-weight: bold;
+        text-align: left;
+        padding: 0px;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .progress-card {
+        padding: 0px;
+        height: 120px;
+    }
+}

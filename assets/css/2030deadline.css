@@ -55,8 +55,6 @@
   background-color: white !important;
 }
 
-
-
 @media (max-width: 768px) {
     .countdown-title {
         font-size: 3.5rem;
@@ -66,6 +64,7 @@
     }
     .countdown {
         flex-direction: column; /* Stacks items vertically */
+        padding: 5px;
     }
 }
 
@@ -73,6 +72,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0;
 }
 
 .column {
@@ -92,20 +92,17 @@
 
 .dl-hdr {
     font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
 }
 
 .left .dl-hdr {
-    font-weight: bold;
     color: #A1B57D;
-    text-align: center;
-    font-size: 40px;
 }
 
 .right .dl-hdr {
-    font-weight: bold;
     color: #DA9E4B;
-    text-align: center;
-    font-size: 40px;
 }
 
 .dl-prgph {
@@ -144,7 +141,7 @@
 }
 
 .row2 {
-    margin-top: 100px;
+    margin-top: 120px;
     margin-bottom: 50px;
 }
 
@@ -245,7 +242,7 @@
 }
 
 @media (max-width: 768px) {
-     .stats-row {
+    .stats-row {
         flex-direction: column;
         text-align: center;
     }
@@ -265,8 +262,42 @@
 
     .stats-header {
         font-size: 3.5rem;
-        /* text-align: center;
-        padding-left: 0px; */
+        margin: 20px;
+    }
+
+    .column {
+        padding: 50px 50px 20px 50px;
+    }
+
+    .dl-hdr {
+        font-size: 30px;
+    }
+
+    .dl-prgph {
+        font-size: 18px;
+    }
+
+    .row1 {
+        margin-top: 50px;
+    }
+    
+    .row2 {
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    .row1 .stats-text p {
+        margin-bottom: 30px;
+    }
+    
+    .row2 .stats-text p {
+        background-color: #A1B57D;
+        padding: 30px;
+        color: white;
+    }
+    
+    .stats-text p {
+        font-size: 16px;
     }
 }
 

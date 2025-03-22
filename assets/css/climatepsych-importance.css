@@ -46,6 +46,11 @@
     border-radius: 10px;
 }
 
+/* 
+.importance-image img:hover {
+    transform: scale(1.1);
+} */
+
 .importance-text p {
     font-size: 1.4rem;
     color: black;
@@ -53,6 +58,10 @@
 }
 
 @media (max-width: 768px) {
+    .importance-section {
+        padding: 30px;
+    }
+
     .importance-content {
         flex-direction: column;
         text-align: center;
@@ -60,6 +69,13 @@
 
     .importance-header {
         text-align: center;
+        font-size: 3.2rem;
+        margin-bottom: 20px;
+    }
+
+    .importance-text p {
+        font-size: 15px;
+        padding: 0px 20px;
     }
 
     .importance-image,
