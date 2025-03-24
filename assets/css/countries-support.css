@@ -47,10 +47,16 @@
 
 .banner.sup-right h4, .banner.sup-left h4 {
     font-size: 2rem;
-    color: #D87946;
+    color: black;
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
     margin-bottom: 14px;
+    text-transform: uppercase;
+}
+
+.banner h4 {
+    color: black;
+    text-transform: uppercase;
 }
 
 .banner.sup-right p, .banner.sup-left p {
