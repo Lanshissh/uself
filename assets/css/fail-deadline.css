@@ -2,7 +2,7 @@
 
 .fail-deadline {
     padding: 70px 20px;
-    background-color: #7F2A3C;
+    background-color: #4F7942;
     text-align: center;
 }
 
@@ -11,14 +11,15 @@
     font-size: 5rem;
     font-weight: bold;
     padding: 0px 50px 50px 50px;
-    color: white;
+    color: #F1DC5C;
     font-family: 'Oswald', sans-serif;
 }
 
 .flip-card-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 50px;
 }
 
 /* Flip Card Styles */
@@ -134,6 +135,11 @@
 
     .flip p {
         font-size: 1.4rem;
+    }
+
+    .flip-card-container {
+        margin-top: 30px;
+        gap: 20px;
     }
     
 }

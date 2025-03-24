@@ -403,6 +403,18 @@ h1.carousel-title {
     height: 3rem !important;
 }
 
+.carousel-text-red {
+    color: rgb(255, 59, 59);
+}
+
+.carousel-text-blue {
+    color: rgb(92, 92, 251);
+}
+
+.carousel-text-orange {
+    color: orange;
+}
+
 nav {
     position: absolute; 
     width: 100%;

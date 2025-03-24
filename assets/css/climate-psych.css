@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 .climate-psychology {
-    background-color: #D87946;
+    background-color: #1C2841;
     padding: 50px 20px 80px 20px;
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@
     font-size: 6rem;
     font-weight: bold;
     margin-bottom: 40px;
-    color: #7F2A3C;
+    color: #4682B4;
     text-align: center;
     font-family: 'Oswald', sans-serif;
 }
@@ -35,7 +35,7 @@
     font-size: 20px;
     margin-bottom: 20px;
     text-align: justify;
-    color: black;
+    color: white;
 }
 
 .cp-image {

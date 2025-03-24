@@ -27,7 +27,7 @@
 
 .banner.sup-left {
     margin-right: auto; 
-    background-color: #C7DB9C;
+    background-color: #4F7942;
     padding: 30px;
 }
 
@@ -35,13 +35,19 @@
     margin-left: auto;
     flex-direction: row-reverse; 
     text-align: right;
-    background-color: #D87946;
+    background-color: #7badd5;
+    padding: 30px;
+}
+
+.banner.sup-left.left-2 {
+    margin-right: auto; 
+    background-color: #F1DC5C;
     padding: 30px;
 }
 
 .banner.sup-right h4, .banner.sup-left h4 {
     font-size: 2rem;
-    color: black;
+    color: #D87946;
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
     margin-bottom: 14px;
@@ -70,7 +76,22 @@
 .banner.sup-right .icon i {
     font-size: 40px;
     color: black;
-    background-color: #fbc080;
+    background-color: #268adc;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 0 15px;
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center;
+    width: 80px;  
+    height: 80px; 
+    flex-shrink: 0;
+}
+
+.banner.sup-left.left-2 .icon i {
+    font-size: 40px;
+    color: black;
+    background-color: #d0b921;
     border-radius: 50%;
     padding: 15px;
     margin: 0 15px;

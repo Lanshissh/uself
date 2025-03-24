@@ -33,9 +33,10 @@
 }
 
 .actions-list h3 {
-    font-size: 2.2rem;
-    color: black;
-    margin-bottom: 15px;
+    text-align: center;
+    font-size: 2.8rem;
+    color: #1C2841;
+    margin-bottom: 40px;
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
 }
@@ -66,12 +67,158 @@
     border-radius: 10px;
 }
 
-/* 
-.fact-image:hover,
-.poster-image:hover {
-    transform: rotate(5deg);
-    transition: ease;
-} */
+.clr-green {
+    color: #4F7942;
+}
+
+.clr-blue {
+    color: #4682B4;
+}
+
+.clr-red {
+    color: #B43F3F;
+}
+
+.clr-darkred {
+    color: #8A2727;
+}
+
+.clr-orange {
+    color: #D87946;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.cards {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    flex: 1 1 calc(33.33% - 20px); /* 3 cards per row */
+    min-width: 250px;
+    max-width: 80%;
+}
+
+.cards.wide {
+    flex: 1 1 calc(50% - 20px); /* 2 cards per row */
+}
+
+.action-flip {
+    position: relative;
+    display: inline-block;
+    margin-right: 2px;
+    width: 400px;
+    height: 250px;
+    perspective: 1000px;
+}
+
+.action-flip > .front,
+.action-flip > .back {
+    display: block;
+    transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
+    transition-duration: .5s;
+    transition-property: transform, opacity;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    padding: 1em 2em;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.action-flip > .front {
+    transform: rotateY(0deg);
+    background-color: #313131;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.action-flip > .front::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.action-flip > .front h1 {
+    position: relative; 
+    z-index: 2;
+}
+
+.action-flip > .back {
+    transform: rotateY(-180deg);
+    background: linear-gradient(135deg, #1E1E1E, #4A4A4A);
+    color: white;
+    opacity: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.action-flip:hover > .front {
+    transform: rotateY(180deg);
+}
+
+.action-flip:hover > .back {
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+
+.action-flip h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+.action-flip h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.action-flip p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .cards {
+        flex: 1 1 100%; 
+    }
+
+    .cards.wide {
+        flex: 1 1 100%; /* Make "wide" cards full-width */
+    }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex: 1 1 100%; /* Stacks all cards in one column */
+    }
+}
 
 @media (max-width: 768px) {
     .actions-section {
@@ -91,6 +238,7 @@
     .actions-list h3 {
         text-align: center;
         margin-bottom: 30px;
+        font-size: 2.4rem;
     }
 
     .actions-list li {
@@ -105,8 +253,9 @@
         padding-left: 0;
     }
 
-    .fact-image,
-    .poster-image {
-        max-width: 90%;
+    .action-flip p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        color: #ddd;
     }
 }

@@ -43,13 +43,13 @@
     font-size: 2.3rem;
     font-weight: bold;
     margin-bottom: 20px;
-    color: black; 
+    color: white; 
     font-family: 'Oswald', sans-serif;
 }
 
 .bento-box p {
     font-size: 1.18rem;
-    color: black;
+    color: white;
     line-height: 1.5;
 }
 
